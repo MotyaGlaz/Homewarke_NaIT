@@ -1,0 +1,54 @@
+body {
+    background-color: bisque;
+}
+
+.MainArea {
+    background-color: linen;
+
+}
+
+nav {
+    width: 660px;
+    margin: 0 auto 30px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.TopMenu > li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.TopMenu > li:last-child {
+    margin-right: 0;
+}
+
+a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Lora', serif;
+    transition: .5s linear;
+}
+
+.MainMenu ul {
+    background: #FFD7A7;
+}
+
+.MainMenu ul a {
+    color: #9B4222;
+}
+
+.MainMenu{
+    position: center;
+}
+
+.TopMenu {
+    position: center;
+}
