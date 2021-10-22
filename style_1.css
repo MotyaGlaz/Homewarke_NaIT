@@ -5,6 +5,7 @@ img{
 }
 body{
     background-color: burlywood;
+    font-family: "Comic Sans MS", Arial, sans-serif;
 }
 h6{
     font-size: 15px;
@@ -26,13 +27,12 @@ ul{
     margin: 0;
     padding: 0;
 }
-.topmenu > li{
+.TopMenu > li{
     display: inline-block;
     margin-right: 20px;
     position: relative;
 }
 .angle-down{
-    font-family: FontAwesome;
     color: darkseagreen;
     padding-left: 10px;
 }

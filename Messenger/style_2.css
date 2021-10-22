@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-family: "Comic Sans MS", Arial, sans-serif;
+}
+body {
+    background-color: bisque;
+}
+
+.MainMenu{
+    display: flex;
+    justify-content: center;
+    background-color: #FFD7A7;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #9B4222;
+    font-size: 18px;
+    font-width: 400;
+    text-align: center;
+    padding: 12px 20px;
+    font-family: 'Lora', serif;
+}
+
+.MainMenu{
+    position: center;
+}
+
+.TopMenu {
+    position: center;
+}
+
+.Wrapper{
+    height: 100%;
+    display: flex;
+    min-width: 55rem;
+    max-width: 40rem;
+    margin: 2rem auto 0 auto;
+}
+
+.MessengerArea{
+    display: flex;
+    border-radius: 5px;
+    margin-bottom: 8rem;
+    width: 100%;
+    background-color: burlywood;
+}
+
+.Users{
+    overflow: auto;
+    background-color: burlywood;
+    width: 30rem;
+    min-width: 20rem;
+}
+
+.UserWrapper{
+    background-color: #b19891;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.UserAvatar{
+    height: 40px;
+    width: 40px;
+    background-color: aqua;
+    border-radius: 30%;
+    margin: 0 16px 0 16px;
+}
+
+.UserInfoWrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: center;
+}
+
+.UserName, .UserInfoWrapper{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 4px;
+    color: beige;
+    width: 100%;
+}
+
+.lastMassage{
+    font-size: 14px;
+    color: #FFD7A7;
+    width: 100%;
+}
+
+.UserWrapper:hover, .active{
+    background-color: darkkhaki;
+}
+
+.Messages{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-width: 38rem;
+    width: 100%;
+}
