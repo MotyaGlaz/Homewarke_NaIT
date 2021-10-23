@@ -9,37 +9,47 @@
 <body>
     <header class="MainMenu">
         <a href="../index.html">Обо мне</a>
-        <a href="#">Мессенджер</a>
+        <a href="https://vk.com/glaz_mat_al" target="_blank">Я в ВК</a>
     </header>
+
     <div class="Wrapper">
         <div class="MessengerArea">
             <div class="Users">
                 <div class="UserWrapper">
                     <div class="UserAvatar"></div>
                     <div class="UserInfoWrapper">
-                        <div class="UserName">Chudo-Бот</div>
-                        <div class="lastMassage">Aga</div>
+                        <div class="UserName">Дневник</div>
+                        <div class="LastMassage"></div>
                     </div>
                 </div>
                 <div class="UserWrapper">
                     <div class="UserAvatar"></div>
                     <div class="UserInfoWrapper">
                         <div class="UserName">Сам-с-собой</div>
-                        <div class="lastMassage">Привет</div>
+                        <div class="LastMassage"></div>
                     </div>
                 </div>
             </div>
             <div class="Messages">
-                <div class="MessagesWrapper">
-
-                </div>
+                <div class="MessagesWrapper"></div>
                 <div class="InputWrapper">
-
+                    <textarea name="SendMessage" placeholder="Введите текст" class="InputText"></textarea>
+                    <div class="SendButtonWrapper">
+                        <button id="SendButton" type="button" onclick="onSendButtonClick">Отправить</button>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
+
+    <template id="SubMessageTemplate">
+        <div class="MaxMessageLengthWrapper">
+            <div class="Message">
+                <div class="MessageAuthor"></div>
+                <div class="MessageText"></div>
+            </div>
+        </div>
+    </template>
 
 </body>
 </html>
