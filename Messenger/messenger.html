@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Мессенджер</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Messenger/style_2.css">
+    <link rel="icon" href="/image/icon.png">
+</head>
+<body>
+    <div class="MainMenu">
+        <a href="../index.html">Обо мне</a>
+        <a href="https://vk.com/glaz_mat_al" target="_blank">Я в ВК</a>
+        <div class="ClearButtonWrapper">
+            <button id="ClearButton" type="button" onclick="onClearButtonClick()">Очистить</button>
+        </div>
+    </div>
+    <div class="Wrapper">
+        <div class="MessengerArea">
+            <div class="Users">
+                <div class="UserWrapper">
+                    <div class="UserAvatar"></div>
+                    <div class="UserInfoWrapper">
+                        <div class="UserName">Сам-с-собой</div>
+                    </div>
+                </div>
+            </div>
+            <div class="Messages">
+                <div class="MessagesWrapper" id="MW"></div>
+                <div class="InputWrapper">
+                    <textarea name="SendMessage" placeholder="Введите текст" class="InputText" id="InputText"></textarea>
+                    <div class="SendButtonWrapper">
+                        <button id="SendButton" type="button" onclick="onSendButtonClick()">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

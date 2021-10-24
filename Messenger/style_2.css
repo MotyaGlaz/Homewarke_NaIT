@@ -2,11 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-weight: 300;
     font-family: "Comic Sans MS", Arial, sans-serif;
 }
 
-body {
+html, body {
     height: 100%;
     overflow: hidden;
     background-color: bisque;
@@ -16,7 +15,6 @@ a {
     text-decoration: none;
     color: #9B4222;
     font-size: 18px;
-    font-width: 400;
     text-align: center;
     padding: 12px 20px;
 }
@@ -26,22 +24,38 @@ a {
     justify-content: center;
     background-color: #FFD7A7;
     margin: 15px;
-    border-radius: 5px;
     position: center;
+    align-items: center;
+}
+
+.ClearButtonWrapper{
+    height: 100%;
+    display: flex;
+    margin: 5px 0;
+}
+
+#ClearButton{
+    padding: 5px 10px ;
+    color: #9B4222;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+}
+
+#ClearButton:hover{
+    background-color: darkkhaki;
 }
 
 .Wrapper{
     height: 100%;
-    min-width: 55rem;
-    max-width: 60rem;
+    min-width: 60rem;
+    max-width: 65rem;
     margin: 2rem auto 0 auto;
     display: flex;
 }
 
 .MessengerArea{
     display: flex;
-    border-radius: 5px;
-    margin-bottom: 8rem;
+    margin-bottom: 10rem;
     width: 100%;
     background-color: burlywood;
 }
@@ -49,8 +63,8 @@ a {
 .Users{
     overflow: auto;
     background-color: burlywood;
-    width: 30rem;
-    min-width: 20rem;
+    width: 20rem;
+    min-width: 15rem;
 }
 
 .Messages{
@@ -58,12 +72,12 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    min-width: 38rem;
+    min-width: 30rem;
     width: 100%;
 }
 
 .UserWrapper{
-    background-color: burlywood;
+    background-color: darkkhaki;
     height: 60px;
     display: flex;
     align-items: center;
@@ -84,6 +98,7 @@ a {
     flex-direction: column;
     flex: 1 1 auto;
     justify-content: center;
+    margin: 0 16px 0 16px;
 }
 
 .UserName, .LastMassage{
@@ -94,16 +109,7 @@ a {
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 5px;
-    color: beige;
-}
-
-.LastMassage{
-    font-size: 14px;
-    color: #FFD7A7;
-}
-
-.UserWrapper:hover, .active{
-    background-color: darkkhaki;
+    color: #9B4222;
 }
 
 .MessagesWrapper{
@@ -128,12 +134,13 @@ a {
 
 .MessageAuthor{
     font-weight: 400;
+    font-style: italic;
     font-size: 14px;
     margin-bottom: 4px;
 }
 
-.MessageText{
-    font-size: 14px;
+.TextMessage{
+    font-size: 12px;
 }
 
 .InputWrapper{
