@@ -26,6 +26,7 @@ a {
     margin: 15px;
     position: center;
     align-items: center;
+    border-radius: 6px;
 }
 
 .ClearButtonWrapper{
