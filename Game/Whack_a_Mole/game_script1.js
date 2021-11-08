@@ -16,9 +16,10 @@ function onStartGame(){
         if (points < 12){
             spawn();
         }else {
-            alert('Вы победили;)');
+            alert('Вы победили;) Хотите сыграть ещё?');
             clearInterval(gameEvent);
             disabledButton(false);
+            document.getElementById('point').innerText = "Необходимо набрать 12 очков";
         }
     }, time + 10)
 }

@@ -78,3 +78,8 @@ a {
 #start:hover {
     background-color: darkkhaki;
 }
+
+#chit {
+    background-color: darkkhaki;
+    margin-top: 20px;
+}
