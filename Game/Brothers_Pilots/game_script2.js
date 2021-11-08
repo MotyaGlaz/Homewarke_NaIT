@@ -86,6 +86,7 @@ function onStartGame(){
     newGame();
 }
 
+//кнопка для быстрой победы
 function onEndGame(){
     cells.forEach(iterator => {
         for (i=1; i<max; i++){
@@ -101,7 +102,13 @@ function onEndGame(){
 
 function checkVictory(){
     if (points == 16){
-        alert("Вы смогли победить за " + moves + " ходов, поздравляю;)");
+        if (moves == 1){
+            alert("Вы смогли победить за " + moves + " ход, поздравляю;)");
+        } else if (moves > 1 && moves < 5){
+            alert("Вы смогли победить за " + moves + " хода, поздравляю;)");
+        }else {
+            alert("Вы смогли победить за " + moves + " ходов, поздравляю;)");
+        }
         if (hack)
             hack = true;
         newGame();
