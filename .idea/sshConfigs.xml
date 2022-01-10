@@ -2,7 +2,7 @@
 <project version="4">
   <component name="SshConfigs">
     <configs>
-      <sshConfig authType="PASSWORD" host="165.22.181.101" id="98f9e164-81c5-4d04-8910-b178ba04de26" port="22" nameFormat="DESCRIPTIVE" username="root" />
+      <sshConfig host="3.92.192.108" id="98f9e164-81c5-4d04-8910-b178ba04de26" keyPath="C:\Users\glazy\.ssh\virtual_machine.pem" port="22" nameFormat="DESCRIPTIVE" username="ubuntu" useOpenSSHConfig="true" />
     </configs>
   </component>
 </project>
